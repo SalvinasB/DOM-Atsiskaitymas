@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="lt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>TODO List</h1>
+
+    <form id="forma">
+      <input type="text" id="uzduotis-text" placeholder="Uzduotis" required />
+      <select id="uzduotis-prioritetas">
+        <option value="low">Zema</option>
+        <option value="medium">Vidutine</option>
+        <option value="high">Auksta</option>
+      </select>
+      <button type="submit">Prideti</button>
+    </form>
+
+    <table id="uzduociu-lentelė" class="hidden">
+      <thead>
+        <tr>
+          <th>Uzduotis</th>
+          <th>Prioritetas</th>
+          <th>Atlikta</th>
+          <th>Veiksmai</th>
+        </tr>
+      </thead>
+      <tbody id="uzduociu-sarasas"></tbody>
+    </table>
+
+    <script src="index.js"></script>
+  </body>
+</html>
